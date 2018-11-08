@@ -349,11 +349,23 @@
 			},
 			parseStyle: function (style){
 				var obj = {}
-				style.replace(/([\w-]+)?:([^;]+)?/g, (match,key,value)=>{
+				style.replace(/([\w-]+)?:([^;]+)?/g, (match, key, value) => {
+					if(key.indexOf('-') != -1 ){
+						key = this.toCamp(key)
+					}
 					obj[key] = value
 				})
 
 				return JSON.stringify(obj);
+			},
+			toCamp: function(key){ 
+				var ks = key.split('-')
+				var camp = ks[0]
+				ks.forEach((item, index)=>{
+					if(index == 0 || !item)return;
+					camp += item[0].toUpperCase() + item.substr(1)
+				}) 
+				return camp
 			},
 			parseJson: function (json){
 				if(json.indexOf('{{') == 0){

@@ -16,7 +16,10 @@ const view = {
     children: {
         component: 'html',
         html: `
-            <div>hello  <button>world</button></div>
+            <div>
+                <button onClick='{{$SayHello}}'>hello</button>
+                 world
+            </div>
         `
     }
 }

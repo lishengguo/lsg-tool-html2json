@@ -19,10 +19,14 @@ registerTemplate('html', (props) => {
 const state = {
     data: {
         html: `
-    <div>
-        <a href="makajs.org" style="color:red">makajs.org</a>
-        <button data-person='{name:"tom",age:10}'>hello</button>
-    </div>
+<div>
+    <a href="https://makajs.org" style="color:red;font-size:12px">
+        {{data.content}}
+    </a>
+    <button data-person='{name:"tom",age:10}' onClick='{{$Hello}}'>
+        hello
+    </button>
+</div>
     `,
         json: ''
     }
