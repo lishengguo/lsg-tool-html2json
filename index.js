@@ -52,6 +52,7 @@ class action {
  
 const view = {
     component:'div',
+    style:{height:'100%'},
     children:[{ 
         component: 'html',
         html: ` 
