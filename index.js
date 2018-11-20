@@ -10,7 +10,7 @@ const name = pkgJson.name
 
 registerComponent('CodeMirror', CodeMirror)
 registerTemplate('html', (props) => {
-    const json = htmlparser.HTMLtoJSON(props.html)
+    const json = htmlparser.HTMLtoJSON(props.html || props.children)
     console.log(json)
     return JSON.parse(json)
 })

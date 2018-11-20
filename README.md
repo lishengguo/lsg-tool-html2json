@@ -15,7 +15,7 @@ const view = {
     conponent: 'div',
     children: {
         component: 'html',
-        html: `
+        children: `
             <div>
                 <button onClick='{{$SayHello}}'>hello</button>
                  world

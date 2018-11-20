@@ -589,7 +589,7 @@ module.exports = _classCallCheck;
 /* 4 */
 /***/ (function(module) {
 
-module.exports = {"isMakaApp":true,"name":"lsg-tool-html2json","description":"the application for registering the html template component and Html to Json tool","version":"1.1.6","license":"MIT","author":"","repository":{"type":"git","url":"https://github.com/lishengguo/lsg-tool-html2json.git"},"bugs":{"url":"https://github.com/lishengguo/lsg-tool-html2json/issues"},"homepage":"https://github.com/lishengguo/lsg-tool-html2json#readme","scripts":{"start":"maka start","dev":"maka start --dev","build":"maka build","pkg":"maka pkg"},"dependencies":{},"server":{"proxy":null,"port":8000},"subAppDir":"./apps","devDependencies":{"codemirror":"^5.41.0","react-codemirror2":"^5.1.0"}};
+module.exports = {"isMakaApp":true,"name":"lsg-tool-html2json","description":"the application for registering the html template component and Html to Json tool","version":"1.1.7","license":"MIT","author":"","repository":{"type":"git","url":"https://github.com/lishengguo/lsg-tool-html2json.git"},"bugs":{"url":"https://github.com/lishengguo/lsg-tool-html2json/issues"},"homepage":"https://github.com/lishengguo/lsg-tool-html2json#readme","scripts":{"start":"maka start","dev":"maka start --dev","build":"maka build","pkg":"maka pkg"},"dependencies":{},"server":{"proxy":null,"port":8000},"subAppDir":"./apps","devDependencies":{"codemirror":"^5.41.0","react-codemirror2":"^5.1.0"}};
 
 /***/ }),
 /* 5 */
@@ -1290,7 +1290,7 @@ var _dec, _class;
 var name = _package_json__WEBPACK_IMPORTED_MODULE_2__.name;
 Object(maka__WEBPACK_IMPORTED_MODULE_3__["registerComponent"])('CodeMirror', react_codemirror2__WEBPACK_IMPORTED_MODULE_4__["Controlled"]);
 Object(maka__WEBPACK_IMPORTED_MODULE_3__["registerTemplate"])('html', function (props) {
-  var json = _htmlparser__WEBPACK_IMPORTED_MODULE_8__["HTMLtoJSON"](props.html);
+  var json = _htmlparser__WEBPACK_IMPORTED_MODULE_8__["HTMLtoJSON"](props.html || props.children);
   console.log(json);
   return JSON.parse(json);
 });
