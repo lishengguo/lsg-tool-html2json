@@ -50,12 +50,8 @@ class action {
     }
 }
  
-const view = {
-    component:'div',
-    style:{height:'100%'},
-    children:[{ 
-        component: 'html',
-        html: ` 
+const view = { 
+        component: 'html', children: ` 
 <div class='lsg-tool-html2json' >        
     <div class='lsg-tool-html2json-left'>
         <CodeMirror options="{mode:'json',theme:'material',lineNumbers:true}" lineNumbers=true value='{{data.html}}' onBeforeChange='{{$onChange}}'/>
@@ -68,8 +64,7 @@ const view = {
         <CodeMirror options="{mode:'json',theme:'material',lineNumbers:true}" lineNumbers=true value='{{data.json}}'/>
     </div> 
 <div>    
-`
-    }]
+` 
 }
  
 /*

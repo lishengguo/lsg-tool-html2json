@@ -11,17 +11,14 @@ $ maka add lsg-tool-html2json
 
 2. Modify the view
 ```javascript
-const view = {
-    conponent: 'div',
-    children: {
-        component: 'html',
-        children: `
-            <div>
-                <button onClick='{{$SayHello}}'>hello</button>
-                 world
-            </div>
-        `
-    }
+const view = { 
+    component: 'html',
+    children: `
+        <div>
+            <button onClick='{{$SayHello}}'>hello</button>
+                world
+        </div>
+    ` 
 }
 ```
 

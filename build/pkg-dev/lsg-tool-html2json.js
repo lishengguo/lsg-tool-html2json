@@ -589,7 +589,7 @@ module.exports = _classCallCheck;
 /* 4 */
 /***/ (function(module) {
 
-module.exports = {"isMakaApp":true,"name":"lsg-tool-html2json","description":"the application for registering the html template component and Html to Json tool","version":"1.1.7","license":"MIT","author":"","repository":{"type":"git","url":"https://github.com/lishengguo/lsg-tool-html2json.git"},"bugs":{"url":"https://github.com/lishengguo/lsg-tool-html2json/issues"},"homepage":"https://github.com/lishengguo/lsg-tool-html2json#readme","scripts":{"start":"maka start","dev":"maka start --dev","build":"maka build","pkg":"maka pkg"},"dependencies":{},"server":{"proxy":null,"port":8000},"subAppDir":"./apps","devDependencies":{"codemirror":"^5.41.0","react-codemirror2":"^5.1.0"}};
+module.exports = {"isMakaApp":true,"name":"lsg-tool-html2json","description":"the application for registering the html template component and Html to Json tool","version":"1.1.8","license":"MIT","author":"","repository":{"type":"git","url":"https://github.com/lishengguo/lsg-tool-html2json.git"},"bugs":{"url":"https://github.com/lishengguo/lsg-tool-html2json/issues"},"homepage":"https://github.com/lishengguo/lsg-tool-html2json#readme","scripts":{"start":"maka start","dev":"maka start --dev","build":"maka build","pkg":"maka pkg"},"dependencies":{},"server":{"proxy":null,"port":8000},"subAppDir":"./apps","devDependencies":{"codemirror":"^5.41.0","react-codemirror2":"^5.1.0"}};
 
 /***/ }),
 /* 5 */
@@ -1324,14 +1324,8 @@ var action = (_dec = Object(maka__WEBPACK_IMPORTED_MODULE_3__["actionMixin"])('b
   Object.assign(this, option.mixins);
 }) || _class);
 var view = {
-  component: 'div',
-  style: {
-    height: '100%'
-  },
-  children: [{
-    component: 'html',
-    html: " \n<div class='lsg-tool-html2json' >        \n    <div class='lsg-tool-html2json-left'>\n        <CodeMirror options=\"{mode:'json',theme:'material',lineNumbers:true}\" lineNumbers=true value='{{data.html}}' onBeforeChange='{{$onChange}}'/>\n        <div class='lsg-tool-html2json-left-function'> \n            <button type='button' onClick='{{$parseJson(data)}}'>parseJson</button>\n        </div>\n    </div>\n    <div class='lsg-tool-html2json-center'></div>\n    <div class='lsg-tool-html2json-right'>\n        <CodeMirror options=\"{mode:'json',theme:'material',lineNumbers:true}\" lineNumbers=true value='{{data.json}}'/>\n    </div> \n<div>    \n"
-  }]
+  component: 'html',
+  children: " \n<div class='lsg-tool-html2json' >        \n    <div class='lsg-tool-html2json-left'>\n        <CodeMirror options=\"{mode:'json',theme:'material',lineNumbers:true}\" lineNumbers=true value='{{data.html}}' onBeforeChange='{{$onChange}}'/>\n        <div class='lsg-tool-html2json-left-function'> \n            <button type='button' onClick='{{$parseJson(data)}}'>parseJson</button>\n        </div>\n    </div>\n    <div class='lsg-tool-html2json-center'></div>\n    <div class='lsg-tool-html2json-right'>\n        <CodeMirror options=\"{mode:'json',theme:'material',lineNumbers:true}\" lineNumbers=true value='{{data.json}}'/>\n    </div> \n<div>    \n"
   /*
   const view = {
       component: 'div',
