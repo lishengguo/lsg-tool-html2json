@@ -2,7 +2,7 @@
   "isMakaApp": true,
   "name": "lsg-tool-html2json",
   "description": "the application for registering the html template component and Html to Json tool",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "license": "MIT",
   "author": "",
   "repository": {
